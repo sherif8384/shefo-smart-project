@@ -1,5 +1,3 @@
-
-
 <html lang="ar" dir="rtl"><head>
     <meta charset="UTF-8"><meta property="og:title" content="شريف عبد المنعم | خبير حلول الذكاء الاصطناعي">
     <meta property="og:description" content="تطوير واجهات ذكية وحلول السحاب">
@@ -84,12 +82,11 @@
             font-weight: 900;
             background: var(--gradient-text);
             -webkit-background-clip: text;
-
             -webkit-text-fill-color: transparent;
             margin-bottom: 15px;background-clip: text;
         }
 
-        #typewriter { min-height: 120px; }
+        #typewriter-container{ min-height: 120px; }
         
         #typewriter {
             font-size: 1.67rem; 
@@ -208,7 +205,7 @@
         .full { grid-column: span 4; }
 
         .cta-section { text-align: center; margin: 80px 0; }
-        .whatsapp-btn {
+        .whatsapp-btn, .facebook-btn {
             background: #25d366;
             color: white;
             padding: 22px 45px;
@@ -223,7 +220,7 @@
         }
 
         .facebook-btn {
-            margin-top: 20px;
+            margin: 30px;
             background: #077ee0;
             color: white;
             padding: 22px 45px;
@@ -264,9 +261,9 @@
     <div class="container">
         <header>
             <h1>شريف عبد المنعم</h1>
-            <div id="typewriter"></div>
-            
-                
+            <div id="typewriter-container">
+                <div id="typewriter"></div>
+
                 <p id="passion" class="passion-text active">
                     لدي شغف كبير بالبرمجة والتقنيات الحديثة لذلك أعمل على تطوير مهاراتي البرمجية باستمرار بما يجعلني متمكنا في تنفيذ مشاريعكم البرمجية بدرجة كبيرة من الاحتراف والتميز.
                 </p>
@@ -330,7 +327,7 @@
 
             <section id="grad" class="card full reveal active">
                 <h3>مشروع التخرج المطور</h3>
-                <span class="subtitle">كُلية التربية، جامعة عين شمس- قسم تكنولوجيا التعليم الرقمي - تعليم مفتوح - بواسطة شريف عبد المنعم 2026</span>
+                <span class="subtitle">كُلية التربية، جامعة عين شمس- قسم تكنولوجيا التعليم الرقمي  - تعليم مفتوح - بواسطة شريف عبد المنعم 2026</span>
                 <div class="description-box">
                     يجسد هذا المشروع قمة الدمج بين المبادئ الأكاديمية والحلول التقنية المبتكرة. لقد قمت بتوظيف خبراتي في الذكاء الاصطناعي لتطوير منصة تخدم القطاع التربوي، مما يعكس قدرة التكنولوجيا على تحويل المناهج التقليدية إلى تجارب تفاعلية ذكية.
                 </div>
@@ -353,7 +350,7 @@
     </div>
 
     <script>
-        const welcomeMessage = "مرحباً، أنا شريف عبد المنعم - مطور واجهات أمامية وخبير دمج حلول الذكاء الاصطناعي والحوسبة السحابية.";
+        const welcomeMessage = "مرحباً، أنا شريف عبد المنعم – مطور واجهات أمامية وخبير دمج حلول الذكاء الاصطناعي والحوسبة السحابية.";
         let charIndex = 0;
         const typingSpeed = 90;
 
